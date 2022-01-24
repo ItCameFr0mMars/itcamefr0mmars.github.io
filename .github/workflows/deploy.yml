@@ -1,2 +1,21 @@
-- name: Blazing fast GitHub Pages deploys
-  uses: alex-page/blazing-fast-gh-pages-deploy@v1.1.0
+name: Blazing fast GitHub Pages deploy
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+      - name: npm install, test and build
+        run: |
+          npm install
+          npm run test
+          npm run build
+      - name: Deploy site to gh-pages branch
+        uses: alex-page/blazing-fast-gh-pages-deploy@v1.1.0
+        with:
+          repo-token: ${{ secrets.GH_PAT }}
