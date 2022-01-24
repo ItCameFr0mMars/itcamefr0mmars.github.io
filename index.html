@@ -29,13 +29,13 @@ body {background-color: #FE865E;}
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #23B5D3;
   display: block;
   transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #E0E0CE;
 }
 
 .sidenav .closebtn {
@@ -55,10 +55,18 @@ body {background-color: #FE865E;}
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+	#main #topnav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0px;
+	}
+	#main #topnav img {
+		height: 50px;
+	}	
 </style>
 </head>
 <body>
-
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="/gba">GBA</a>
@@ -68,9 +76,12 @@ body {background-color: #FE865E;}
 </div>
 
 <div id="main">
-  <h2>Mars's Shit</h2>
-  <p>Wow you found my site. cool tld. also sub to marsgaming.</p>
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+	<div id="topnav">
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="../mars.png"></span>
+		<h1> ball</h1>
+	</div>
+  	<h2>Mars's Shit</h2>
+  	<p>Wow you found my site. cool tld. also sub to marsgaming.</p>
 </div>
 
 <script>
