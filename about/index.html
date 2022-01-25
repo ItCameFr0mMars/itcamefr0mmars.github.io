@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mars.tk</title>
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+  color: #E0E0CE;
+}
+
+body {background-color: #FE865E;}  
+  
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #23B5D3;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #E0E0CE;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+	#main #topnav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0px;	
+	}
+	#main #topnav img {
+		height: 50px;
+	}
+	#main #topnav #social img {
+		height: 50px;
+	}	
+</style>
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="/gba">GBA</a>
+  <a href="/renders">Renders</a>
+  <a href="/bigrat">Big Rat</a>
+  <a href="https://mars.tk">Home</a>
+</div>
+
+<div id="main">
+	<div id="topnav">
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="../mars.png"></span>
+		<div id="social">
+			<a href="https://github.com/ItcameFr0mMars"><img src="../github.png"></a>
+			<a href="https://www.youtube.com/MarsGaming9b9t"><img src="../youtube.png"></a>
+			<a href="https://www.reddit.com/u/ItCameFr0mMars"><img src="../reddit-logo.png"></a>
+		</div>
+	</div>
+  	<h2>Mars's Shit</h2>
+  	<p>Wow you found my site. cool tld. also sub to marsgaming.</p>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(254,134,94,0.4)";
+  document.body.style.color="#080F0F";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "#FE865E";
+  document.body.style.color="#E0E0CE";
+}
+</script>
+   
+</body>
+</html> 
