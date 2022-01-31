@@ -193,7 +193,7 @@ console.log(e)
 }, printErr: function (e) {
 console.error(e)
 }, Jobs: {}, buildDownloadProgress: {}, resolveBuildUrl: function (e) {
-var base_path = "/res/slope.json";
+var base_path = "res/slope.json";
 return e.match(/(http|https|ftp|file):\/\//) ? e : base_path.substring(0, base_path.lastIndexOf("/") + 1) + e
 }
 },
