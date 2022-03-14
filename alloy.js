@@ -1,1 +1,1 @@
-var num = 5
+var num = '1'
