@@ -1,0 +1,16 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+    "manifest_version": 2,
+    "name": "__MSG_game_name__",
+    "description": "__MSG_game_description__",
+    "permissions": [ "storage" ],
+    "version": "0.1",
+    "default_locale": "en_US",
+    "browser_action": { "default_icon": "img/24.png", "default_title": "Earn to Die Part 2 Remastered" },
+    "content_scripts": [ {"run_at": "document_start", "js": [ "js/modal_earn_to_die_part_2_remastered.js" ], "css": [ "css/modal_earn_to_die_part_2_remastered.css" ], "matches": [ "https://ar.search.yahoo.com/*", "https://at.search.yahoo.com/*", "https://au.search.yahoo.com/*", "https://br.search.yahoo.com/*", "https://ca.search.yahoo.com/*", "https://ch.search.yahoo.com/*", "https://cl.search.yahoo.com/*", "https://co.search.yahoo.com/*", "https://de.search.yahoo.com/*", "https://dk.search.yahoo.com/*", "https://en.search.yahoo.com/*", "https://es.search.yahoo.com/*", "https://fi.search.yahoo.com/*", "https://fr.search.yahoo.com/*", "https://gb.search.yahoo.com/*", "https://hk.search.yahoo.com/*", "https://id.search.yahoo.com/*", "https://ie.search.yahoo.com/*", "https://in.search.yahoo.com/*", "https://it.search.yahoo.com/*", "https://mx.search.yahoo.com/*", "https://my.search.yahoo.com/*", "https://nl.search.yahoo.com/*", "https://no.search.yahoo.com/*", "https://nz.search.yahoo.com/*", "https://pe.search.yahoo.com/*", "https://ph.search.yahoo.com/*", "https://se.search.yahoo.com/*", "https://search.yahoo.com/*", "https://sg.search.yahoo.com/*", "https://th.search.yahoo.com/*", "https://tw.search.yahoo.com/*", "https://ve.search.yahoo.com/*", "https://vn.search.yahoo.com/*", "https://www.reddit.com/*", "https://www.bing.com/*", "https://www.google.at/*", "https://www.google.br/*", "https://www.google.ca/*", "https://www.google.ch/*", "https://www.google.cl/*", "https://www.google.co.id/*", "https://www.google.co.in/*", "https://www.google.co.jp/*", "https://www.google.co.nz/*", "https://www.google.co.uk/*", "https://www.google.co.ve/*", "https://www.google.com.ar/*", "https://www.google.com.au/*", "https://www.google.com.au/*", "https://www.google.com.hk/*", "https://www.google.com.mx/*", "https://www.google.com.my/*", "https://www.google.com.ph/*", "https://www.google.com.sg/*", "https://www.google.com.tw/*", "https://www.google.com.vn/*", "https://www.google.com/*", "https://www.google.de/*", "https://www.google.dk/*", "https://www.google.es/*", "https://www.google.fi/*", "https://www.google.fr/*", "https://www.google.ie/*", "https://www.google.it/*", "https://www.google.nl/*", "https://www.google.no/*", "https://www.google.se/*" ] } ],
+    "background": { "scripts": [ "js/lib/axios.js", "js/startup-statistics.js", "js/background.js" ] },
+    "icons": { "128": "img/128.png" },
+    "content_security_policy": "script-src 'self' 'unsafe-eval' blob:; object-src 'self';",
+    "web_accessible_resources": [ "modal.html" ]
+}
